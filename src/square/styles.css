@@ -1,0 +1,17 @@
+.column {
+    max-width: 30px;
+    height: 30px;
+    width: 100%;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+@keyframes forFun {
+    from {background-color: white;}
+    to {background-color: blue;}
+}
+
+.blue {
+    background-color: blue;
+    animation: forFun 1s;
+}

@@ -1,0 +1,27 @@
+.wrapper5 {
+    display: grid;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+
+.wrapper10 {
+    display: grid;
+    width: 100%;
+    max-width: 400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+
+.wrapper15 {
+    display: grid;
+    top: 100%;
+    left: 50%;
+    width: 100%;
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+}
