@@ -4,7 +4,7 @@
     top: 20%;
     transform: translate(-50%, 0);
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     column-gap: 30px;
 }
 
@@ -15,7 +15,7 @@
 
 .headerWrapper {
     display: flex;
-    width: 100%;
+    width: 70%;
     column-gap: 10px;
 }
 
