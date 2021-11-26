@@ -14,7 +14,7 @@ import SquareList from "./squareList/SquareList";
 
 const App = () => {
   const [ fetchedData, setFetchedData ] = useState(null);
-  const [ mockState, setMockState ] = useState(0);
+  const [ mockState, setMockState ] = useState('');
   const [ isStart, setIsStart ] = useState(false);
   const [ dataList, setDataList ] = useState({ list: [] });
 
@@ -43,13 +43,13 @@ const App = () => {
   }, [ setDataList ]);
 
   const correctClassName = useCallback(() => {
-    if (mockState === 5) {
+    if (+mockState === 5) {
         return 'wrapper5';
     }
-    if (mockState === 10) {
+    if (+mockState === 10) {
         return 'wrapper10';
     }
-    if (mockState === 15) {
+    if (+mockState === 15) {
         return 'wrapper15';
     }
   }, [ mockState ]);
@@ -59,7 +59,7 @@ const App = () => {
       setDataList({list: []});
   };
 
-  const isButtonDisabled = mockState === 0;
+  const isButtonDisabled = +mockState === 0;
 
   if (!fetchedData) {
       return null;
